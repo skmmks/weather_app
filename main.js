@@ -3,6 +3,6 @@ var lat, lon;
 var tempUnit = "C";
 var currentTempInCelsius;
 
-$(document).ready(){
-    
-}
+$(document).ready(function() {
+  console.log("jquery works");
+});
