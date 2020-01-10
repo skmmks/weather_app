@@ -4,5 +4,11 @@ var tempUnit = "C";
 var currentTempInCelsius;
 
 $(document).ready(function() {
-  console.log("jquery works");
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var lat = "lat=" + position.coords.latitude;
+      var lon = "lon=" + position.coords.longitude;
+      getWeather(lat, lon);
+    });
+  }
 });
