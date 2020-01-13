@@ -14,3 +14,5 @@ $(document).ready(function() {
     console.log("Not supported");
   }
 });
+
+function getWeather(lat, lon) {}
