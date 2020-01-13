@@ -13,6 +13,8 @@ $(document).ready(function() {
   } else {
     console.log("Not supported");
   }
+
+  $(".weatherButton").click(function() {});
 });
 
 function getWeather(lat, lon) {}
