@@ -21,4 +21,8 @@ $(document).ready(function() {
 
 function getWeather(lat, lon) {
   var urlString = api + lat + "&" + lon;
+  $.ajax({
+    url: urlString,
+    success: function() {}
+  });
 }
