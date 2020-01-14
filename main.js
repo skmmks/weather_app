@@ -14,7 +14,11 @@ $(document).ready(function() {
     console.log("Not supported");
   }
 
-  $(".weatherButton").click(function() {});
+  $(".weatherButton").click(function() {
+    alert("button was clicked");
+  });
 });
 
-function getWeather(lat, lon) {}
+function getWeather(lat, lon) {
+  var urlString = api + lat + "&" + lon;
+}
